@@ -23,10 +23,15 @@ const WrapperButton = styled.div`
   margin-left: 27px;
 `;
 
-const Button = ({text='PLAY', value}) => {
+interface ButtonProps {
+  text?: string,
+  value: string
+}
+
+const Button = ({ text = 'PLAY', value }: ButtonProps) => {
   return (
     <WrapperButton>
-      <StyledButton disabled={value===''}>{text}</StyledButton>
+      <StyledButton disabled={value === ''}>{text}</StyledButton>
     </WrapperButton>
   );
 };

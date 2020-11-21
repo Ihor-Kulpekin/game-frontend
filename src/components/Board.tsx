@@ -11,7 +11,13 @@ const BoardRow = styled.div`
   }
 `;
 
-const Board = ({ gameMode }) => {
+interface BoardProps {
+  gameMode: {
+    field: number
+  }
+}
+
+export const Board = ({ gameMode}:BoardProps) => {
   return (
     <div>
       {

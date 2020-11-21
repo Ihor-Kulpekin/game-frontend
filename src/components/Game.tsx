@@ -10,9 +10,8 @@ display: flex;
   justify-content: center;
 `;
 
-
 const Game = () => {
-  const { payload } = useSelector((state) => state.gameSettings.gameMode);
+  const { payload } = useSelector((state:any) => state.gameSettings.gameMode);
   return (
     <StyledGame>
       <Board gameMode={payload}/>

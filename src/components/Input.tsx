@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 import styled from 'styled-components';
 
@@ -14,7 +14,12 @@ const WrapperInput = styled.div`
 margin-left: 25px;
 `;
 
-const Input = ({ text, handleChangeText }) => {
+interface InputProps {
+  text: string,
+  handleChangeText(): Function
+}
+
+const Input = ({ text, handleChangeText }: InputProps) => {
   return (
     <WrapperInput>
       <StyledInput placeholder="Enter your name" value={text} onChange={handleChangeText}/>

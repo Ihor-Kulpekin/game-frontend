@@ -3,8 +3,8 @@ import GameField from './components/GameField';
 import TableWinners from './components/TableWinners';
 
 import styled from 'styled-components';
-import Label from './components/Label';
-import Game from './components/Game';
+import Label from './components/Label.tsx';
+import Game from './components/Game.tsx';
 
 const WrapperApp = styled.div`
   display: flex;

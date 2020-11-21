@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 
 import styled from 'styled-components';
 import Select from './Select';
-import Input from './Input';
-import Button from './Button';
-import { useDispatch, useSelector } from 'react-redux';
+import Input from './Input.tsx';
+import { useDispatch } from 'react-redux';
 import { getGameSettings } from '../actions/actions';
+import Button from './Button.tsx';
 
 const WrapperGameField = styled.div`
   display: flex;
