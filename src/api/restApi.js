@@ -3,8 +3,8 @@ const getData = async (url) => {
   return await data.json();
 };
 
-export const getGameSettings = async (mode) => {
-  const baseUrl = `${process.env.baseUrl}game-settings/${mode}`;
+export const getGameSettings = async (mode='easy') => {
+  const baseUrl = `http://localhost:3000/game-settings/`+mode;
   return await getData(baseUrl);
 };
 

@@ -1,14 +1,36 @@
 import React from 'react';
-import './App.scss';
 import GameField from './components/GameField';
 import TableWinners from './components/TableWinners';
 
+import styled from 'styled-components';
+import Label from './components/Label';
+import Game from './components/Game';
+
+const WrapperApp = styled.div`
+  display: flex;
+  width: 100%;
+  height: 100%;
+`;
+
+const WrapperBlock = styled.div`
+  width: 50%;
+  border: 1px solid lightgray;
+  height: 1200px;
+  padding: 150px;
+`;
+
 const App = () => {
   return (
-    <div className="App">
-      <GameField/>
-      <TableWinners/>
-    </div>
+    <WrapperApp>
+      <WrapperBlock>
+        <GameField />
+        <Label name="Message here"/>
+        <Game/>
+      </WrapperBlock>
+      <WrapperBlock>
+        <TableWinners />
+      </WrapperBlock>
+    </WrapperApp>
   );
 };
 
