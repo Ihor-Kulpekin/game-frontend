@@ -16,7 +16,7 @@ margin-left: 25px;
 
 interface InputProps {
   text: string,
-  handleChangeText(): Function
+  handleChangeText?(event: React.ChangeEvent<HTMLInputElement>): void
 }
 
 const Input = ({ text, handleChangeText }: InputProps) => {

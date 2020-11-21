@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 
 import styled from 'styled-components';
 
@@ -14,7 +14,12 @@ const StyledOption = styled.option`
 font-size: 14px;
 `
 
-const Select = ({ mode, handleChangeOption }) => {
+interface SelectProps {
+  mode: string,
+  handleChangeOption?(event: React.ChangeEvent<HTMLSelectElement>):void
+}
+
+const Select : FC<SelectProps> = ({ mode, handleChangeOption }) => {
   return (
     <StyledSelect name="level" id="level" value={mode} onChange={handleChangeOption}>
       <StyledOption value="easy">

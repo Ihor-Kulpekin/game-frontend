@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 
 import styled from 'styled-components';
 import Select from './Select';
-import Input from './Input.tsx';
+import Input from './Input';
 import { useDispatch } from 'react-redux';
 import { getGameSettings } from '../actions/actions';
-import Button from './Button.tsx';
+import Button from './Button';
 
 const WrapperGameField = styled.div`
   display: flex;
@@ -21,12 +21,14 @@ const GameField = () => {
     dispatch(getGameSettings(mode));
   };
 
-  const handleChangeOption = (event) => {
-    setMode(event.target.value);
+  const handleChangeOption = (event: React.FormEvent<HTMLSelectElement>) => {
+    const newValue = event.currentTarget.value;
+    setMode(newValue);
   };
 
-  const handleChangeText = (event) =>{
-    setValue(event.target.value);
+  const handleChangeText = (event: React.FormEvent<HTMLInputElement>) =>{
+    const newValue = event.currentTarget.value;
+    setValue(newValue);
   };
 
   useEffect(fetchMode, [mode]);

@@ -9,9 +9,9 @@ const WrapperItem = styled.div`
  width: 350px;
  background-color: lightgray;
  margin-bottom: 2px;
-`
+`;
 
-const Item = () =>{
+const Item = () => {
   return (
     <WrapperItem>
       <p>
@@ -19,7 +19,7 @@ const Item = () =>{
       </p>
       <p>Date</p>
     </WrapperItem>
-  )
+  );
 };
 
 export default Item;

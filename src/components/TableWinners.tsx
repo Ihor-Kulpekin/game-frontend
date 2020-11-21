@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styled from 'styled-components';
-import Label from './Label.tsx';
+import Label from './Label';
 import Item from './Item';
 
 const WrapperTableWinners = styled.div`
