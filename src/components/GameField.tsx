@@ -4,8 +4,8 @@ import styled from 'styled-components';
 import Select from './Select';
 import Input from './Input';
 import { useDispatch } from 'react-redux';
-import { getGameSettings } from '../actions/actions';
 import Button from './Button';
+import { getGameSettings } from '../actions/actions';
 
 const WrapperGameField = styled.div`
   display: flex;
@@ -14,8 +14,8 @@ const WrapperGameField = styled.div`
 
 const GameField = () => {
   const dispatch = useDispatch();
-  const [mode, setMode] = useState('normal');
-  const [value, setValue] = useState('');
+  const [mode, setMode] = useState<string>('normal');
+  const [value, setValue] = useState<string>('');
 
   const fetchMode = () => {
     dispatch(getGameSettings(mode));

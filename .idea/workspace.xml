@@ -19,31 +19,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d53d5111-6cbe-483f-9719-5892e0b88ba1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Board.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Game.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Item.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Label.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Select.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Square.js" afterDir="false" />
+    <list default="true" id="d53d5111-6cbe-483f-9719-5892e0b88ba1" name="Default Changelist" comment="added typescript">
+      <change afterPath="$PROJECT_DIR$/src/actions/actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/restApi.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/constants.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/gameSettingsReducer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/restApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/restApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GameField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GameField.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TableWinners.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TableWinners.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/gameSettingsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/gameSettingsReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sagas/gameSettingsSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sagas/gameSettingsSaga.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/restApi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GameField.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GameField.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/gameSettingsReducer.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +42,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -73,6 +63,11 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/actions" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -111,6 +106,13 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/api/restApi.js" />
+        <option value="$PROJECT_DIR$/src/constants/constants.js" />
+        <option value="$PROJECT_DIR$/src/reducers/gameSettingsReducer.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -125,29 +127,30 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="698" y="325" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605631996802">
-      <screen x="0" y="23" width="1920" height="1097" />
+    <state x="698" y="330" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606072690444">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
+    <state x="698" y="330" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1606072690444" />
     <state x="698" y="325" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1097@0.23.1920.1097" timestamp="1605631996802" />
-    <state width="1899" height="303" key="GridCell.Tab.0.bottom" timestamp="1605805793138">
+    <state width="1899" height="344" key="GridCell.Tab.0.bottom" timestamp="1606074273805">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1899" height="303" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1605805793138" />
+    <state width="1899" height="344" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1606074273805" />
     <state width="1899" height="303" key="GridCell.Tab.0.bottom/0.23.1920.1097@0.23.1920.1097" timestamp="1605713624942" />
-    <state width="1899" height="303" key="GridCell.Tab.0.center" timestamp="1605805793137">
+    <state width="1899" height="344" key="GridCell.Tab.0.center" timestamp="1606074273804">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1899" height="303" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1605805793137" />
+    <state width="1899" height="344" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1606074273804" />
     <state width="1899" height="303" key="GridCell.Tab.0.center/0.23.1920.1097@0.23.1920.1097" timestamp="1605713624941" />
-    <state width="1899" height="303" key="GridCell.Tab.0.left" timestamp="1605805793136">
+    <state width="1899" height="344" key="GridCell.Tab.0.left" timestamp="1606074273802">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1899" height="303" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1605805793136" />
+    <state width="1899" height="344" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1606074273802" />
     <state width="1899" height="303" key="GridCell.Tab.0.left/0.23.1920.1097@0.23.1920.1097" timestamp="1605713624941" />
-    <state width="1899" height="303" key="GridCell.Tab.0.right" timestamp="1605805793138">
+    <state width="1899" height="344" key="GridCell.Tab.0.right" timestamp="1606074273804">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1899" height="303" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1605805793138" />
+    <state width="1899" height="344" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1606074273804" />
     <state width="1899" height="303" key="GridCell.Tab.0.right/0.23.1920.1097@0.23.1920.1097" timestamp="1605713624942" />
   </component>
 </project>
